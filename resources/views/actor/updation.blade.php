@@ -44,7 +44,7 @@
         </div>
 
         <div>
-            <button> Update a new actor </button>
+            <button> Update an actor </button>
         </div>
     </form>
 @endsection

@@ -29,4 +29,19 @@ class CategoryController extends Controller
 
         return redirect()->route('category.creation');
     }
+
+    public function updation(){
+        $categories = Category::all();
+        return view('category.updation', ["categories" => $categories]);
+    }
+
+    public function update(Request $request){
+        $category = Category::findOrFail($request->category_id);
+
+        $category -> update([
+            "name" => $request -> name,
+        ]);
+
+        return redirect()->route('category.updation');
+    }
 }

@@ -25,6 +25,8 @@ Route::get('/category', [CategoryController::class, 'options'])->name('category.
 Route::get('/category/display', [CategoryController::class, 'display'])->name('category.display');
 Route::get('/category/creation', [CategoryController::class, 'creation'])->name('category.creation');
 Route::post('/category/creation', [CategoryController::class, 'create'])->name('category.create');
+Route::get('/category/updation', [CategoryController::class, 'updation'])->name('category.updation');
+Route::post('/category/update', [CategoryController::class, 'update'])->name('category.update');
 
 // MOVIE
 Route::get('/movie', [MovieController::class, 'options'])->name('movie.options');
