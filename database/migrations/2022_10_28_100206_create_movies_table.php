@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //movies : id, title, description, category, actors ;
+        //movies : id, title, description, category, actors
         Schema::create('movies', function (Blueprint $table) {
             $table->id();
             $table->timestamps();

@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //Actors : id, lastname, firstname, birth_date, sex ;
+        //Actors : id, lastname, firstname, birth_date, sex
         Schema::create('actors', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
