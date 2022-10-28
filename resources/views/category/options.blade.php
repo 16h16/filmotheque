@@ -11,7 +11,7 @@ Category options
     <h2> Choose between these actions </h2>
     <ul>
         <li> <a href="{{ route('category.display') }}"> Display all categories </a> </li>
-        <li> <a href="{{ route('category.display') }}"> Create a category </a> </li>
+        <li> <a href="{{ route('category.creation') }}"> Create a category </a> </li>
         <li> <a href="{{ route('category.display') }}"> Update a category </a> </li>
         <li> <a href="{{ route('category.display') }}"> Delete a category </a> </li>
     </ul>

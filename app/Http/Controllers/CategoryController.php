@@ -15,4 +15,17 @@ class CategoryController extends Controller
         $categories = Category::all();
         return view('category.display', ["categories" => $categories]);
     }
+
+    public function creation(){
+        return view('category.creation');
+    }
+
+    public function create(Request $request){
+
+        Category::create([
+            "name" => $request -> name,
+        ]);
+
+        return redirect()->route('category.creation');
+    }
 }
