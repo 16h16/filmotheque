@@ -11,10 +11,12 @@ class Movie extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['title', 'description', 'category_id'];
+
     public function category(){
         return $this->belongsTo(Category::class);
     }
     public function actors(){
-        return $this->hasMany(Actor::class);
+        return $this->belongsToMany(Actor::class);
     }
 }
