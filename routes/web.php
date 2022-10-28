@@ -26,6 +26,8 @@ Route::post('/category/creation', [CategoryController::class, 'create'])->name('
 
 Route::get('/movie', [MovieController::class, 'options'])->name('movie.options');
 Route::get('/movie/display', [MovieController::class, 'display'])->name('movie.display');
+Route::get('/movie/creation', [MovieController::class, 'creation'])->name('movie.creation');
+Route::post('/movie/creation', [MovieController::class, 'create'])->name('movie.create');
 
 Route::get('/actor', [ActorController::class, 'options'])->name('actor.options');
 Route::get('/actor/display', [ActorController::class,'display'])->name('actor.display');
