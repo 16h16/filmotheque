@@ -9,9 +9,9 @@
     <h1> Actor options </h1>
     <h2> Choose between these actions </h2>
     <ul>
-        <li> Display all actors </li>
-        <li> Create a actor </li>
-        <li> Update a actor </li>
-        <li> Delete a actor </li>
+        <li> <a href="{{ route('actor.display') }}"> Display all actors </a> </li>
+        <li> <a href="{{ route('actor.display') }}"> Create a actor </a> </li>
+        <li> <a href="{{ route('actor.display') }}"> Update a actor </a> </li>
+        <li> <a href="{{ route('actor.display') }}"> Delete a actor </a> </li>
     </ul>
 @endsection

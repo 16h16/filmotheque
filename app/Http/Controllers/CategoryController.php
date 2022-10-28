@@ -13,6 +13,6 @@ class CategoryController extends Controller
 
     public function display(){
         $categories = Category::all();
-        dd($categories);
+        return view('category.display', ["categories" => $categories]);
     }
 }
