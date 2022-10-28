@@ -14,6 +14,7 @@ class MovieController extends Controller
 
     public function display(){
         $movies = Movie::all();
+        //dd($movies[1]->actors);
         return view('movie.display',["movies" => $movies]);
     }
 

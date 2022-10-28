@@ -12,7 +12,7 @@
     <ul>
         <li> <a href="{{ route('actor.display') }}"> Display all actors </a> </li>
         <li> <a href="{{ route('actor.creation') }}"> Create a actor </a> </li>
-        <li> <a href="{{ route('actor.display') }}"> Update a actor </a> </li>
+        <li> <a href="{{ route('actor.updation') }}"> Update a actor </a> </li>
         <li> <a href="{{ route('actor.display') }}"> Delete a actor </a> </li>
     </ul>
 @endsection

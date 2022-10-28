@@ -37,3 +37,5 @@ Route::get('/actor', [ActorController::class, 'options'])->name('actor.options')
 Route::get('/actor/display', [ActorController::class,'display'])->name('actor.display');
 Route::get('/actor/creation', [ActorController::class, 'creation'])->name('actor.creation');
 Route::post('/actor/creation', [ActorController::class, 'create'])->name('actor.create');
+Route::get('/actor/updation', [ActorController::class, 'updation'])->name('actor.updation');
+Route::post('/actor/update', [ActorController::class, 'update'])->name('actor.update');
