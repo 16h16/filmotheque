@@ -13,9 +13,12 @@ return new class extends Migration
      */
     public function up(): void
     {
+        //movies : id, title, description, category, actors ;
         Schema::create('movies', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('title');
+            $table->text('description');
         });
     }
 
