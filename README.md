@@ -1,6 +1,6 @@
-## Filmotheque
+## Description
 
-**Filmotheque** is a Laravel application that organizes a library of movies
+**Filmotheque** is a Laravel application that organizes a library of movies.
 
 ## Features
 
@@ -24,4 +24,4 @@
 
 ## Link 
 
-You can try the app, click [here](https://www.google.com) !
+soon.
