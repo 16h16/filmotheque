@@ -12,6 +12,7 @@
     <form action="{{ route('movie.create') }}" method="POST">
         @csrf
         <div>
+            <label>Select a category : </label>
             <select name="category_id">
                 @foreach($categories as $category)
                     <option value="{{ $category -> id }}"> {{ $category -> name }}</option>
@@ -19,10 +20,12 @@
             </select>
         </div>
         <div>
+            <label>Title : </label>
             <input type="text" name="title" placeholder="title">
         </div>
 
         <div>
+            <label>Description : </label>
             <textarea name="description">Description..</textarea>
         </div>
         <div>

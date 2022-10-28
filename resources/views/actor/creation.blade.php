@@ -12,15 +12,19 @@
     <form action="{{ route('actor.create') }}" method="POST">
         @csrf
         <div>
+            <label>Firstname : </label>
             <input type="text" name="firstname" placeholder="firstname">
         </div>
         <div>
+            <label>lastname : </label>
             <input type="text" name="lastname" placeholder="lastname">
         </div>
         <div>
+            <label>Birth date : </label>
             <input type="date" name="birth_date" placeholder="birth_date">
         </div>
         <div>
+            <label>Select a gender : </label>
             <select name="gender">
                 <option value="man">man</option>
                 <option value="woman">woman</option>

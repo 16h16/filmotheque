@@ -12,9 +12,8 @@
     <form action="{{ route('category.create') }}" method="POST">
         @csrf
         <div>
+            <label> Name </label>
             <input type="text" name="name" placeholder="name">
-        </div>
-        <div>
             <button> Create a new category </button>
         </div>
     </form>
