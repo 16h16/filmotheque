@@ -33,6 +33,8 @@ Route::get('/movie', [MovieController::class, 'options'])->name('movie.options')
 Route::get('/movie/display', [MovieController::class, 'display'])->name('movie.display');
 Route::get('/movie/creation', [MovieController::class, 'creation'])->name('movie.creation');
 Route::post('/movie/creation', [MovieController::class, 'create'])->name('movie.create');
+Route::get('/movie/updation', [MovieController::class, 'updation'])->name('movie.updation');
+Route::post('/movie/update', [MovieController::class, 'update'])->name('movie.update');
 
 // ACTOR
 Route::get('/actor', [ActorController::class, 'options'])->name('actor.options');

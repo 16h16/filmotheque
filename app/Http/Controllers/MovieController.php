@@ -33,4 +33,20 @@ class MovieController extends Controller
 
         return redirect()->route('movie.creation');
     }
+
+    public function updation(){
+        $movies = Movie::all();
+        return view('movie.updation', ["movies" => $movies]);
+    }
+
+    public function update(Request $request){
+        $movie = Movie::findOrFail($request->movie_id);
+
+        $movie -> update([
+            "title" => $request -> title,
+            "description" => $request -> description,
+        ]);
+
+        return redirect()->route('movie.updation');
+    }
 }
