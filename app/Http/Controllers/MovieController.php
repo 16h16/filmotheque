@@ -49,4 +49,17 @@ class MovieController extends Controller
 
         return redirect()->route('movie.updation');
     }
+
+    public function deletion(){
+        $movies = Movie::all();
+        return view('movie.deletion', ["movies" => $movies]);
+    }
+
+    public function delete(Request $request){
+        $movie = Movie::findOrFail($request->movie_id);
+
+        $movie -> delete();
+
+        return redirect()->route('movie.deletion');
+    }
 }

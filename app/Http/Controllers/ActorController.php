@@ -49,4 +49,17 @@ class ActorController extends Controller
 
         return redirect()->route('actor.updation');
     }
+
+    public function deletion(){
+        $actors = Actor::all();
+        return view('actor.deletion', ["actors" => $actors]);
+    }
+
+    public function delete(Request $request){
+        $actor = Actor::findOrFail($request->actor_id);
+
+        $actor -> delete();
+
+        return redirect()->route('actor.deletion');
+    }
 }

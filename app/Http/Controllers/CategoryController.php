@@ -44,4 +44,17 @@ class CategoryController extends Controller
 
         return redirect()->route('category.updation');
     }
+
+    public function deletion(){
+        $categories = Category::all();
+        return view('category.deletion', ["categories" => $categories]);
+    }
+
+    public function delete(Request $request){
+        $category = Category::findOrFail($request->category_id);
+
+        $category -> delete();
+
+        return redirect()->route('category.deletion');
+    }
 }
