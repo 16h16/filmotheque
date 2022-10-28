@@ -14,6 +14,21 @@ class ActorController extends Controller
     public function display(){
         $actors = Actor::all();
         return view('actor.display', ["actors" => $actors]);
+    }
 
+    public function creation(){
+        return view('actor.creation');
+    }
+
+    public function create(Request $request){
+
+        Actor::create([
+            "firstname" => $request -> firstname,
+            "lastname" => $request -> lastname,
+            "birth_date" => $request -> birth_date,
+            "gender" => $request -> gender,
+        ]);
+
+        return redirect()->route('actor.creation');
     }
 }
