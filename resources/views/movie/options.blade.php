@@ -4,6 +4,8 @@
     Movie options
 @endsection
 
+@include('partials.navbar')
+
 @section('content')
     <h1> Movie options </h1>
     <h2> Choose between these actions </h2>

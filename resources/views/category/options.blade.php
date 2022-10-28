@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
-
 @section('title')
 Category options
 @endsection
+
+@include('partials.navbar')
 
 @section('content')
     <h1> Category options </h1>

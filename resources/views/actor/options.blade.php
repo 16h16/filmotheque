@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
-
 @section('title')
     Actor options
 @endsection
+
+@include('partials.navbar')
 
 @section('content')
     <h1> Actor options </h1>

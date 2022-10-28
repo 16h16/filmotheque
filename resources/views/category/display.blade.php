@@ -4,6 +4,8 @@
     Display categories
 @endsection
 
+@include('partials.navbar')
+
 @section('content')
     <h1> Display categories </h1>
     <h2> All categories </h2>

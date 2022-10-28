@@ -4,6 +4,8 @@
     Display movies
 @endsection
 
+@include('partials.navbar')
+
 @section('content')
     <h1> Display movies </h1>
     <h2> All movies </h2>
