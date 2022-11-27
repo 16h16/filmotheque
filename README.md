@@ -1,4 +1,4 @@
-## Description
+# Description
 
 **Filmotheque** is a Laravel application that organizes a library of movies.
 
@@ -21,7 +21,3 @@
 - Create
 - Update
 - Delete
-
-## Link 
-
-soon.
